@@ -6,7 +6,85 @@ html {
   height: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 0.8rem;
+}
+
+body header {
+  margin-bottom: 5vh;
+}
+
+.team-score {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-score .team-1,
+.team-score .team-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-score .score {
+  margin-top: 20px;
+}
+
+.controller {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.controller .name {
+  margin-top: 15vh;
+  display: flex;
+}
+.controller .name button {
+  width: 150px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.controller .score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 23vw;
+}
+
+.buttons button {
+  font-family: "Karla", sans-serif;
+  height: 30px;
+  width: 30px;
+}
+
+.text-box {
+  margin-top: 5px;
 }
