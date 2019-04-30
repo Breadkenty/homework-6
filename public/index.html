@@ -12,57 +12,69 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <header>
-      <h1>My Score Board</h1>
-    </header>
+    <main>
+      <header>
+        <h1>My Score Board</h1>
+      </header>
 
-    <div class="team-score">
-      <div class="team-1">
-        <h4 class="name">Team 1</h4>
-        <h1 class="score">0</h1>
-      </div>
-
-      <div class="team-2">
-        <h4 class="name">Team 2</h4>
-        <h1 class="score">0</h1>
-      </div>
-    </div>
-
-    <div class="controller">
-      <div class="team-1">
-        <div class="name">
-          <div>
-            <p>Update Team 1 Name</p>
-            <input class="text-box" />
-          </div>
-          <button class="update-button">Update</button>
+      <div class="team-score">
+        <div class="team-1">
+          <h4 class="name">Team 1</h4>
+          <h1 class="score">0</h1>
         </div>
 
-        <div class="score">
-          <p>Update Team 1 Score</p>
-          <div class="buttons">
-            <button class="add-1">+</button>
-            <button class="sub-1">-</button>
-          </div>
+        <div class="team-2">
+          <h4 class="name">Team 2</h4>
+          <h1 class="score">0</h1>
         </div>
       </div>
 
-      <div class="team-2">
-        <div class="name">
-          <div>
-            <p>Update Team 2 Name</p>
-            <input class="text-box" />
+      <div class="controller">
+        <div class="team-1">
+          <div class="name">
+            <div>
+              <p>Update Team 1 Name</p>
+              <input type="text" class="text-box" />
+            </div>
+
+            <button class="update-button" id="disable">Update</button>
           </div>
-          <button class="update-button">Update</button>
+
+          <div class="score">
+            <p>Update Team 1 Score</p>
+            <div class="buttons">
+              <button class="add-1" id="disable">+</button>
+              <button class="sub-1" id="disable">-</button>
+            </div>
+          </div>
         </div>
 
-        <div class="score">
-          <p>Update Team 2 Score</p>
-          <div class="buttons">
-            <button class="add-1">+</button>
-            <button class="sub-1">-</button>
+        <div class="team-2">
+          <div class="name">
+            <div>
+              <p>Update Team 2 Name</p>
+              <input class="text-box" />
+            </div>
+            <button class="update-button" id="disable">Update</button>
+          </div>
+
+          <div class="score">
+            <p>Update Team 2 Score</p>
+            <div class="buttons">
+              <button class="add-1" id="disable">+</button>
+              <button class="sub-1" id="disable">-</button>
+            </div>
           </div>
         </div>
+      </div>
+    </main>
+    <div class="overlay-hidden">
+      <div class="dialog">
+        <div>
+          <h3>!!!</h3>
+          <h4>wins!</h4>
+        </div>
+        <button>Play Again</button>
       </div>
     </div>
     <script src="/main.js" charset="utf-8"></script>

@@ -12,8 +12,16 @@ html {
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
   margin: 0;
-  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,4 +95,53 @@ body header {
 
 .text-box {
   margin-top: 5px;
+}
+
+.overlay-hidden {
+  width: 30vw;
+  height: 30vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: solid pink 2px;
+  position: absolute;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dialog h3 {
+  margin-bottom: 5px;
+}
+
+.overlay-show {
+  width: 30vw;
+  height: 30vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px #fff58c;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.body-blur main {
+  filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
